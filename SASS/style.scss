@@ -1,3 +1,10 @@
+@import './header';
+@import './hero';
+@import './type-link';
+@import './link-result';
+@import './info';
+@import './boost-link';
+
 *{
     margin: 0;
     padding: 0;
@@ -8,4 +15,5 @@ html{
     text-rendering: optimizeLegibility;
     font-size: 18px;
  font-family: 'Poppins', sans-serif;
+ overflow-x: hidden;
 }

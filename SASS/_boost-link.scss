@@ -1,0 +1,30 @@
+.boost-links{
+    text-align: right;
+    background-color: $darkViolet;
+    max-height: 50vh;
+
+    .bg-boost{
+        height: 50vh;
+    }
+   h3{
+       text-align: center;
+       color: #fff;
+       font-size: 200%;
+       transform: translateY(-15rem);
+       -webkit-transform: translateY(-15rem);
+       -moz-transform: translateY(-15rem);
+       -ms-transform: translateY(-15rem);
+       -o-transform: translateY(-15rem);
+}
+
+.btn-boost-container{
+    text-align: center;
+.btn-boost{
+   transform: translateY(-12rem);
+   -webkit-transform: translateY(-12rem);
+   -moz-transform: translateY(-12rem);
+   -ms-transform: translateY(-12rem);
+   -o-transform: translateY(-12rem);
+}
+}
+}

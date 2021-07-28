@@ -1,0 +1,48 @@
+@import './config';
+
+.info{
+    padding-top: 75px;
+    text-align: center;
+
+    p{
+        line-height: 30px;
+        color: $grayishViolet;
+        padding: 20px;
+        font-size: 90%;
+    }
+
+    .box{
+        padding-top: 30px;
+        background-color: #fff;
+        margin: 30px;
+        position: relative;
+        z-index: 100000;
+       .style-box{
+           border-radius: 50%;
+           -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+           -ms-border-radius: 50%;
+           -o-border-radius: 50%;
+           background-color:$darkViolet;
+           padding: 15px;
+           transform: translateY(-40px);
+           -webkit-transform: translateY(-40px);
+           -moz-transform: translateY(-40px);
+           -ms-transform: translateY(-40px);
+           -o-transform: translateY(-40px);
+}
+
+}
+
+.line-icon{
+    border-top: 10px solid $cyan;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+   max-width: 50%;
+   position: relative;
+   left: 25%;
+}
+}

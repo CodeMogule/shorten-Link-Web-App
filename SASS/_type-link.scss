@@ -1,0 +1,60 @@
+@import './config';
+
+.type-link{
+  text-align:right;
+    background-color: $darkViolet;
+    width: 75%;
+    position: relative;
+    top:3.5rem;
+    left: 13%;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+ 
+    .bg-link{
+        padding-left: 15px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        
+}
+
+.link-text-bar{
+    text-align: center;
+    width: 90%;
+    height: 5vh;
+    margin-right: 15px;
+    border-radius: 5px;
+    transform: translateY(-6rem);
+    -webkit-transform: translateY(-6rem);
+    -moz-transform: translateY(-6rem);
+    -ms-transform: translateY(-6rem);
+    -o-transform: translateY(-6rem);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.shorten-it-btn{
+    text-align: center;
+    position: absolute;
+    left: 6%;
+    height: 5vh;
+    width: 90%;
+    border-radius: 5px;
+    transform: translateY(-1.5rem);
+    -webkit-transform: translateY(-1.5rem);
+    -moz-transform: translateY(-1.5rem);
+    -ms-transform: translateY(-1.5rem);
+    -o-transform: translateY(-1.5rem);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+}

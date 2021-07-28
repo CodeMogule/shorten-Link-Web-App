@@ -1,0 +1,34 @@
+@import './config';
+
+.link-result{
+  background-color: #fff;
+  width: 95%;
+  position: relative;
+  left: 4%;
+  border-radius:5px ;
+  -webkit-border-radius:5px ;
+  -moz-border-radius:5px ;
+  -ms-border-radius:5px ;
+  -o-border-radius:5px ;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  h4{
+      padding: 10px;
+      text-align: left;
+  }
+
+  a{
+      text-decoration: none;
+      color: $cyan;
+      h5{
+          padding: 10px;
+          text-align: left;
+      }
+  }
+
+  .copy-btn{
+      
+  }
+}
