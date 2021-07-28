@@ -6,6 +6,9 @@
     .bg-boost{
         height: 50vh;
     }
+    .btn-boost{
+        @include btnStyle;
+    }
    h3{
        text-align: center;
        color: #fff;

@@ -11,3 +11,24 @@ $grayishViolet:hsl(257, 7%, 63%);
 $veryDarkBlue: hsl(255, 11%, 22%);
 $veryDarkViolet: hsl(260, 8%, 14%)
 ;
+
+//cta btn style
+
+@mixin btnStyle {
+    background-color: $cyan;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    width:40%;
+}
+
+@mixin linkbtn {
+    background-color: $cyan;
+    border: none;
+    color: #fff;
+}

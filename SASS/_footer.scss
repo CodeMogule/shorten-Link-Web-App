@@ -1,0 +1,81 @@
+@import './config';
+
+footer{
+    background-color:$veryDarkViolet ;
+    text-align: center;
+
+svg{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.features-col{
+
+    .widget{
+        h4{
+            color: #fff;
+            padding: 15px;
+        }
+        .features-lists{
+            list-style: none;
+            li{
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+.Resources-col{
+padding-top: 20px;
+    .widget{
+        h4{
+            color: #fff;
+            padding: 15px;
+        }
+        .resources-lists{
+            list-style: none;
+            li{
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+.company-col{
+    padding-top: 20px;
+    .widget{
+        h4{
+            color: #fff;
+            padding: 15px;
+        }
+        .company-lists{
+            list-style: none;
+            li{
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+.social-media{
+    .social-media-lists{
+        display: inline-flex;
+        list-style: none;
+        li{
+            margin: 10px;
+        }
+    }
+}
+}

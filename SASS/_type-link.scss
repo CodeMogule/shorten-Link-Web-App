@@ -12,15 +12,17 @@
     -moz-border-radius:5px ;
     -ms-border-radius:5px ;
     -o-border-radius:5px ;
+
+    .bg-link-desktop{
+        display: none;
+    }
  
-    .bg-link{
-        padding-left: 15px;
+    .bg-link-mobile{
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
-        
 }
 
 .link-text-bar{
@@ -56,5 +58,7 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    @include linkbtn;
+    cursor: pointer;
 }
 }

@@ -17,5 +17,10 @@
             margin: 50px;
             margin-top: -10px;
         }
+
+        .btn-hero{
+           @include btnStyle;
+           cursor: pointer;
+}
     }
 }

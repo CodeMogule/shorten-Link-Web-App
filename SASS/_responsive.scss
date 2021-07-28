@@ -1,0 +1,160 @@
+@import './config';
+
+@media only screen and (min-width:993px){
+
+    header{
+
+        .logo{
+         padding-left: 130px;
+        }
+
+        .hamburger{
+            display: none;
+        }
+
+        .header-nav{
+            background-color: inherit;
+            position: inherit;
+            width: auto;
+            border-radius: inherit;
+            -webkit-border-radius: inherit;
+            -moz-border-radius: inherit;
+            -ms-border-radius: inherit;
+            -o-border-radius: inherit;
+           
+            .nav-lists{
+                display: inline-flex;
+                flex-direction: row;
+                align-items:center;
+                list-style: none;
+                position: absolute;
+                top: 0;
+                left: 30%;
+                .list{
+                    margin: 10px;
+                    color: $grayishViolet;
+                    cursor: pointer;
+                }
+            }
+    
+            .signup-login-btn{
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                list-style: none;
+                position: absolute;
+                right: 10%;
+                top: 0;
+                li{
+                    margin: 10px;
+                    color: $grayishViolet;
+                    cursor: pointer;
+                }
+            }
+    }
+}
+
+#hero{
+    .hero-content{
+        text-align: left;
+        padding: 150px;
+        img{
+          height: 50vh;
+          float: right;
+          transform: translateX(40%);
+          -webkit-transform: translateX(40%);
+          -moz-transform: translateX(40%);
+          -ms-transform: translateX(40%);
+          -o-transform: translateX(40%);
+}
+        h1{text-align: initial;
+            width: auto;
+            font-size: 300%;
+        }
+
+        p{
+            text-align: left;
+            font-size: 90%;
+            width: auto;
+            color: $grayishViolet;
+            margin-top:-20px;
+            margin-left: -0;
+        }
+
+        .btn-hero{
+           @include btnStyle;
+           width: 20%;
+           cursor: pointer;
+}
+    }
+}
+
+.type-link{
+    text-align:initial;
+      background-color: $darkViolet;
+      max-width: 100%;
+      height: 15vh;
+      position: relative;
+      top:3.5rem;
+      left: 13%;
+      border-radius:5px ;
+      -webkit-border-radius:5px ;
+      -moz-border-radius:5px ;
+      -ms-border-radius:5px ;
+      -o-border-radius:5px ;
+   
+      .bg-link-mobile{
+          display: none;
+      }
+
+      .bg-link-desktop{
+          position: relative;
+          right: 100px;
+          display: block;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+          max-width: 100%;
+          height: 15vh;
+          margin-left: 100px;
+}
+  
+  .link-text-bar{
+      text-align: center;
+      width: 60%;
+      height: 7vh;
+      border-radius: 5px;
+      transform: translateY(-3.5rem);
+      -webkit-transform: translateY(-3.5rem);
+      -moz-transform: translateY(-3.5rem);
+      -ms-transform: translateY(-3.5rem);
+      -o-transform: translateY(-3.5rem);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+}
+  
+  .shorten-it-btn{
+      text-align: center;
+      position: initial;
+      left: 6%;
+      height: 5vh;
+      width: 20%;
+      border-radius: 5px;
+      transform: translateY(-1.5rem);
+      -webkit-transform: translateY(-1.5rem);
+      -moz-transform: translateY(-1.5rem);
+      -ms-transform: translateY(-1.5rem);
+      -o-transform: translateY(-1.5rem);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      @include linkbtn;
+      cursor: pointer;
+  }
+  }
+}
