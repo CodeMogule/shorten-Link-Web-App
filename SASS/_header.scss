@@ -1,5 +1,10 @@
 @import './config';
 
+.minimize{
+    overflow: hidden;
+    height: 100vh;
+}
+
 header{
     .logo{
         margin: 30px;
@@ -9,6 +14,13 @@ header{
         float: right;
         margin: 30px;
     }
+
+    .close{
+        float: right;
+        margin: 30px;
+        display: none;
+        font-size: 130%;
+}
 
     .header-nav{
         background-color: $darkViolet;
@@ -20,7 +32,12 @@ header{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        transition: 0.5s;
         top: -100%;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
         .nav-lists{
             display: flex;
             flex-direction: column;

@@ -12,6 +12,10 @@
             display: none;
         }
 
+        .close{
+            display: none;
+        }
+
         .header-nav{
             background-color: inherit;
             position: inherit;
@@ -21,6 +25,26 @@
             -moz-border-radius: inherit;
             -ms-border-radius: inherit;
             -o-border-radius: inherit;
+
+            .sign-up{
+                background-color: $cyan;
+                color: #fff !important;
+                padding: 10px;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                &:hover{
+                    opacity: 0.5;
+                }
+}
+
+.login{
+    &:hover{
+        color: #000;
+    }
+}
            
             .nav-lists{
                 display: inline-flex;
@@ -34,6 +58,9 @@
                     margin: 10px;
                     color: $grayishViolet;
                     cursor: pointer;
+                    &:hover{
+                        color: #000;
+                    }
                 }
             }
     
@@ -45,6 +72,7 @@
                 position: absolute;
                 right: 10%;
                 top: 0;
+                
                 li{
                     margin: 10px;
                     color: $grayishViolet;
@@ -85,6 +113,9 @@
            @include btnStyle;
            width: 20%;
            cursor: pointer;
+           &:hover{
+            opacity: 0.5;
+        }
 }
     }
 }
@@ -102,6 +133,16 @@
       -moz-border-radius:5px ;
       -ms-border-radius:5px ;
       -o-border-radius:5px ;
+
+
+      .error-message{
+          position: absolute;
+         left: 5%;
+         top: 80%;
+         font-size: 90%;
+         color: $red;
+         display: none;
+      }
    
       .bg-link-mobile{
           display: none;
@@ -125,36 +166,360 @@
       text-align: center;
       width: 60%;
       height: 7vh;
-      border-radius: 5px;
-      transform: translateY(-3.5rem);
-      -webkit-transform: translateY(-3.5rem);
-      -moz-transform: translateY(-3.5rem);
-      -ms-transform: translateY(-3.5rem);
-      -o-transform: translateY(-3.5rem);
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
+      border-radius: 10px;
+      transform: translateY(-4.5rem);
+      -webkit-transform: translateY(-4.5rem);
+      -moz-transform: translateY(-4.5rem);
+      -ms-transform: translateY(-4.5rem);
+      -o-transform: translateY(-4.5rem);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      position: relative;
+      left: 5%;
 }
   
   .shorten-it-btn{
       text-align: center;
       position: initial;
       left: 6%;
-      height: 5vh;
+      height: 6.5vh;
       width: 20%;
       border-radius: 5px;
-      transform: translateY(-1.5rem);
-      -webkit-transform: translateY(-1.5rem);
-      -moz-transform: translateY(-1.5rem);
-      -ms-transform: translateY(-1.5rem);
-      -o-transform: translateY(-1.5rem);
+      transform: translateY(-4.5rem);
+      -webkit-transform: translateY(-4.5rem);
+      -moz-transform: translateY(-4.5rem);
+      -ms-transform: translateY(-4.5rem);
+      -o-transform: translateY(-4.5rem);
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
+      position: relative;
+      left: 10%;
       @include linkbtn;
       cursor: pointer;
+      &:hover{
+        opacity: 0.5;
+    }
+}
+  }
+  .link-result{
+    background-color: #fff;
+    width: 75%;
+    position: relative;
+    left: 12%;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: initial;
+    
+    h4{
+        padding: 10px;
+        text-align: initial;
+    }
+  
+    a{
+        text-decoration: none;
+        color: $cyan;
+        h5{
+            padding: 10px;
+            text-align: right;
+           float: right;
+           position: relative;
+           bottom: 1.8rem;
+           right: 10rem;
+        }
+    }
+
+    .link-result-line{
+        display: none;
+    }
+  
+    .copy-btn{
+       border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+       font-size: 70%;
+       @include linkbtn;
+       padding: 10px;
+       width: 7%;
+       cursor: pointer;
+       float: right;
+       position: relative;
+       bottom: 1.8rem;
+       left: 10rem;
+       &:hover{
+        opacity: 0.5;
+    }
   }
   }
+  
+  .info{
+    margin-top: 5%;
+    text-align: center;
+    padding: 16px;
+  
+    .headline-info{
+    h2{
+        text-align: center;
+    }
+   
+   
+    p{
+        line-height: 30px;
+        color: $grayishViolet;
+        padding: 20px;
+        font-size: 90%;
+       text-align: center;
+       width: 50%;
+       position: relative;
+       left: 25%;
+    }
+}
+
+.info-container{
+    display: flex;
+
+    .detailed-box{
+        transform: translateY(10%);
+        -webkit-transform: translateY(10%);
+        -moz-transform: translateY(10%);
+        -ms-transform: translateY(10%);
+        -o-transform: translateY(10%);
+}
+
+.fully-box{
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+}
+}
+
+    .box{
+        text-align: left;
+        padding-top: 30px;
+        background-color: #fff;
+        margin: 30px;
+        position: relative;
+        z-index: 100000;
+        padding: 20px;
+        p{
+            text-align: left;
+            margin: -20px;
+            margin-top:1px ;
+        }
+       .style-box{
+           border-radius: 50%;
+           -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+           -ms-border-radius: 50%;
+           -o-border-radius: 50%;
+           background-color:$darkViolet;
+           padding: 15px;
+           transform: translateY(-40px);
+           -webkit-transform: translateY(-40px);
+           -moz-transform: translateY(-40px);
+           -ms-transform: translateY(-40px);
+           -o-transform: translateY(-40px);
+           
+}
+
+}
+
+.line-icon{
+    border-top: 10px solid $cyan;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    max-width: 50%;
+    position: relative;
+    left: 25%;
+    display: table-cell
+}
+
+.line-icon-desktop{
+    border-top: 10px solid $cyan;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    max-width: 50%;
+    position: relative;
+    left: 25%;
+    bottom: 8rem;
+}
+}
+
+.boost-links{
+    text-align: right;
+    background-color: $darkViolet;
+    max-height: 50vh;
+
+    .bg-boost-mobile{
+        display: none;
+    }
+
+    .bg-boost-desktop{
+        display: block;
+        height: 50vh;
+    }
+
+    .btn-boost{
+        @include btnStyle;
+        width: 15%;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+   h3{
+       text-align: center;
+       color: #fff;
+       font-size: 200%;
+       transform: translateY(-15rem);
+       -webkit-transform: translateY(-15rem);
+       -moz-transform: translateY(-15rem);
+       -ms-transform: translateY(-15rem);
+       -o-transform: translateY(-15rem);
+}
+
+.btn-boost-container{
+    text-align: center;
+.btn-boost{
+   transform: translateY(-12rem);
+   -webkit-transform: translateY(-12rem);
+   -moz-transform: translateY(-12rem);
+   -ms-transform: translateY(-12rem);
+   -o-transform: translateY(-12rem);
+}
+}
+}
+
+footer{
+    background-color:$veryDarkViolet ;
+    text-align: unset;
+    height: 45vh;
+    position: relative;
+
+svg{
+    margin-bottom: 30px;
+    position: relative;
+    left: 15%;
+    top: 1rem;
+}
+
+.footer-nav{
+  position: absolute;
+  left: 35%;
+  bottom: 5.5rem;
+}
+
+.features-col{
+    float: left;
+padding-top: 20px;
+margin: 20px;
+    .widget{
+        h4{
+            color: #fff;
+            padding: 15px;
+        }
+        .features-lists{
+            list-style: none;
+            li{
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: $gray;
+                    &:hover{
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Resources-col{
+    float: left;
+padding-top: 20px;
+margin: 20px;
+    .widget{
+        h4{
+            color: #fff;
+            padding: 15px;
+        }
+        .resources-lists{
+            list-style: none;
+            li{
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: $gray;
+                    &:hover{
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.company-col{
+    float: left;
+    padding-top: 20px;
+    margin: 20px;
+    .widget{
+        h4{
+            color: #fff;
+            padding: 15px;
+        }
+        .company-lists{
+            list-style: none;
+            li{
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: $gray;
+                    &:hover{
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-media{
+    float: left;
+    .social-media-lists{
+        position: absolute;
+        left: 80%;
+        bottom: 13rem;
+        li{
+            a{
+                svg{
+                    path{
+                       &:hover{ fill: $cyan;}
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
 }

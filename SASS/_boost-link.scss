@@ -3,9 +3,14 @@
     background-color: $darkViolet;
     max-height: 50vh;
 
-    .bg-boost{
+    .bg-boost-mobile{
         height: 50vh;
     }
+
+    .bg-boost-desktop{
+        display: none
+    }
+
     .btn-boost{
         @include btnStyle;
     }
